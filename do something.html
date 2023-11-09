@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Number Generator</title>
     <link
       rel="stylesheet"
@@ -50,7 +47,7 @@
           "header header header"
           "nav content aside"
           "footer footer footer";
-        grid-template-rows: 100px 1fr 100px;
+        grid-template-rows: 100px 1fr 300px;
         grid-template-columns: 20% 1fr 20%;
         height: 100vh;
       }
@@ -72,27 +69,26 @@
         padding: 10px;
       }
 
-      
       aside {
-            grid-area: aside;
-            background: #555;
-            color: #fff;
-            padding: 10px;
-        }
+        grid-area: aside;
+        background: #555;
+        color: #fff;
+        padding: 10px;
+      }
 
-        /* Style individual news items */
-        .news-item {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
+      /* Style individual news items */
+      .news-item {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
 
-        /* Style advertisements */
-        .advertisement {
-            background: #ffcc00;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
+      /* Style advertisements */
+      .advertisement {
+        background: #ffcc00;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
 
       .content {
         grid-area: content;
@@ -107,8 +103,6 @@
         text-align: center;
         padding: 10px;
       }
-
-      
     </style>
   </head>
   <body>
@@ -121,10 +115,38 @@
           <a href="#" class="button">Contact Us</a>
         </div>
       </nav>
-      <aside> <a href="https://www.amazon.com/gcx/Sports-&-Outdoor-Gifts/gfhz/events/?_encoding=UTF8&canBeEGifted=false&canBeGiftWrapped=false&categoryId=HOL-Cat-Sports&getItByTomorrow=false&isLimitedTimeOffer=false&isPrime=false&subcategoryIds=HOL-Cat-Sports%3Aoutdoor-recreating&pd_rd_w=1besJ&content-id=amzn1.sym.a4b7ff55-1f19-47ad-9cc8-b0626cbeb9fd&pf_rd_p=a4b7ff55-1f19-47ad-9cc8-b0626cbeb9fd&pf_rd_r=BAP5F6AE0442A4X6RAM5&pd_rd_wg=jJknp&pd_rd_r=57c70657-63c7-4048-b4cb-08fe382045f0&ref_=pd_gw_unk">
-        <img src="1.jpeg" alt="Product Image" style="max-width: 100%; height: auto;">
-    </a>
-    </aside>
+      <aside>
+        <h1>Shop sports and outdoor gifts...</h1>
+        <a
+          href="https://www.amazon.com/gcx/Sports-&-Outdoor-Gifts/gfhz/events/?_encoding=UTF8&canBeEGifted=false&canBeGiftWrapped=false&categoryId=HOL-Cat-Sports&getItByTomorrow=false&isLimitedTimeOffer=false&isPrime=false&subcategoryIds=HOL-Cat-Sports%3Aoutdoor-recreating&pd_rd_w=1besJ&content-id=amzn1.sym.a4b7ff55-1f19-47ad-9cc8-b0626cbeb9fd&pf_rd_p=a4b7ff55-1f19-47ad-9cc8-b0626cbeb9fd&pf_rd_r=BAP5F6AE0442A4X6RAM5&pd_rd_wg=jJknp&pd_rd_r=57c70657-63c7-4048-b4cb-08fe382045f0&ref_=pd_gw_unk"
+        >
+          <img
+            src="1.jpeg"
+            alt="Product Image"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <h1>Gift Iphone ...</h1>
+        <a
+          href="https://www.amazon.com/s?k=iphone&crid=BPS5EKK8JOKG&sprefix=iphone%2Caps%2C167&ref=nb_sb_noss_2"
+        >
+          <img
+            src="2.jpeg"
+            alt="Product Image"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <h1>Top deals...</h1>
+        <a
+          href="https://www.amazon.com/deal/4e6cfe21/?_encoding=UTF8&_encoding=UTF8&searchAlias=fashion&moreDeals=ad362de2&ref_=dlx_gate_dd_dcl_tlt_4e6cfe21_dt_pd_gw_unk&pd_rd_w=KL2D2&content-id=amzn1.sym.71a3aa33-6478-4bef-92f0-b32d06566f5a&pf_rd_p=71a3aa33-6478-4bef-92f0-b32d06566f5a&pf_rd_r=G8W2ZV7FZ189336D09N7&pd_rd_wg=sGTDk&pd_rd_r=b336f285-2f29-4178-95ac-93cb77b80bf1"
+        >
+          <img
+            src="3.jpg"
+            alt="Product Image"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+      </aside>
 
       <div class="content">
         <h1>Welcome to Random Number Generator</h1>
@@ -136,10 +158,25 @@
         <div id="output"></div>
       </div>
       <footer>
-        <h3 class="footer__title">Address</h3>
-        <p>
-          2814 W Bell Rd Phoenix, AZ 85053
-        </p>    
+        <p>Addendum:</p>
+        <h3>
+          In this web page, a Random Number Generator was implemented within a
+          Holy Grail layout, allowing users to generate random numbers within a
+          specified range. The JavaScript function utilized Math.random() for
+          this purpose. Challenges included resolving duplicate IDs and
+          optimizing image styling, while the "aside" section provides Amazon
+          links for sports and outdoor gift ideas.
+        </h3><p>
+          Difficulties faced and how I solved it
+        </p>
+        <h4>
+          Addressing duplicate IDs in the "output" div was resolved by removing
+          the duplicates and ensuring unique IDs. Styling challenges with
+          product images in the "aside" section were overcome by adjusting
+          layouts for proper fitting and maintaining aspect ratios.
+          Additionally, care was taken to ensure accuracy and currency of
+          external links leading to Amazon product pages.
+        </h4>
       </footer>
     </div>
 
