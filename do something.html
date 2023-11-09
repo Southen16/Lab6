@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Random Number Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-bZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Define styles for the buttons */
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #2980b9;
+      }
+
+      /* Style the button container */
+      .button-container {
+        text-align: center;
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "nav content aside"
+          "footer footer footer";
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-columns: 20% 1fr 20%;
+        height: 100vh;
+      }
+
+      header {
+        grid-area: header;
+        background: burlywood;
+        color: black;
+        text-align: center;
+        padding: 50px;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+
+      nav {
+        grid-area: nav;
+        background: royalblue;
+        color: #fff;
+        padding: 10px;
+      }
+
+      
+      aside {
+            grid-area: aside;
+            background: #555;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Style individual news items */
+        .news-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Style advertisements */
+        .advertisement {
+            background: #ffcc00;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+      .content {
+        grid-area: content;
+        background: #eee;
+        padding: 100px;
+      }
+
+      footer {
+        grid-area: footer;
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Random Number Generator</header>
+      <nav>
+        <div class="button-container">
+          <a href="#" class="button">Home</a>
+          <a href="#" class="button">About</a>
+          <a href="#" class="button">Contact Us</a>
+        </div>
+      </nav>
+      <aside> <a href="https://www.amazon.com/gcx/Sports-&-Outdoor-Gifts/gfhz/events/?_encoding=UTF8&canBeEGifted=false&canBeGiftWrapped=false&categoryId=HOL-Cat-Sports&getItByTomorrow=false&isLimitedTimeOffer=false&isPrime=false&subcategoryIds=HOL-Cat-Sports%3Aoutdoor-recreating&pd_rd_w=1besJ&content-id=amzn1.sym.a4b7ff55-1f19-47ad-9cc8-b0626cbeb9fd&pf_rd_p=a4b7ff55-1f19-47ad-9cc8-b0626cbeb9fd&pf_rd_r=BAP5F6AE0442A4X6RAM5&pd_rd_wg=jJknp&pd_rd_r=57c70657-63c7-4048-b4cb-08fe382045f0&ref_=pd_gw_unk">
+        <img src="1.jpeg" alt="Product Image" style="max-width: 100%; height: auto;">
+    </a>
+    </aside>
+
+      <div class="content">
+        <h1>Welcome to Random Number Generator</h1>
+
+        <div>
+          <button id="sortButton">Press to get Random Number</button>
+          <div id="output"></div>
+        </div>
+        <div id="output"></div>
+      </div>
+      <footer>
+        <h3 class="footer__title">Address</h3>
+        <p>
+          2814 W Bell Rd Phoenix, AZ 85053
+        </p>    
+      </footer>
+    </div>
+
+    <script>
+      function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      // Example usage:
+
+      // JavaScript code to solve a simple problem
+      document
+        .getElementById("sortButton")
+        .addEventListener("click", function () {
+          const minRange = 1;
+          const maxRange = 100;
+          const randomNum = getRandomNumber(minRange, maxRange);
+          document.getElementById(
+            "output"
+          ).innerHTML = `Random Number is : ${randomNum}`;
+        });
+    </script>
+  </body>
+</html>
