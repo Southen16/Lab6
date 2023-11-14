@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Murder Mystery Game</title>
+</head>
+<body>
+    <header>
+        <h1>Murder Mystery Game</h1>
+    </header>
+    <div id="story">
+        <p id="story-text">You wake up in a desolate world, surrounded by ruins. What will you do?</p>
+        <div id="choices">
+            <!-- Choices will be dynamically added here -->
+        </div>
+        <div id="image-container">
+            <img id="story-image" src="" alt="Story Image">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<div id="choices">
+    <button onclick="window.location.href='index.html'">Restart</button>
+    </div>
+<footer>
+  <h3>
+    Addendum
+  </h3>
+<p>
+    <h3>HTML:</h3>
+    You have structured your HTML with essential elements like head, header, and body.
+    The header contains the title of the game, and the main content is within the story div.
+    Choices are dynamically added to the choices div, and there's an image container to display story-related images.</b>
+    <h3> CSS:</h3>
+    You've applied styles to enhance the visual appeal, such as transitions on hover, background colors, and font styling.
+    The styling is responsive and should work well on various screen sizes. </b>
+    <h3>JavaScript:</h3>
+    You've defined an object storyStages to represent different stages of the story, each with text, choices, consequences, and an associated image.
+    The startGame function initiates the game by setting the initial stage to "start."
+    The updatePage function dynamically updates the HTML content based on the current stage, including text, choices, and images.
+    The makeChoice function handles user choices, updating the current stage and calling updatePage.
+    The endGame function displays the final stage without choices.</b>
+    <h3>Creative Choices and Insights:</h3>
+    Your use of objects to represent story stages makes the code modular and easy to maintain. Each stage has its own set of properties, simplifying the structure.
+    The decision to use buttons for choices provides a clear and interactive interface for users to navigate the story.
+    The inclusion of images enhances the storytelling experience and engages users visually.</b>
+    <h3>Challenges and Solutions:</h3>
+    One potential challenge could be managing a larger story structure with more complex branching paths. However, your current setup seems scalable and organized.
+    Ensuring a smooth transition between stages might require additional attention, but your use of functions like updatePage helps maintain code clarity.
+    </p>
+</footer>
+
+</html>
